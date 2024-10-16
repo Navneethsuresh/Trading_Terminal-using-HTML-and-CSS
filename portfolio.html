@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="portfolio.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Terminal - Portfolio</title>
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tradezella</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Dashboard</a></li>
+                <li><a href="./Market_overview.html">Market Overview</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li><a href="./watchlist.html">Watchlist</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./analysis.html">Analysis</a></li>
+                <li><a href="./settings.html">Settings</a></li>
+                <li><a href="./account.html">Account</a></li>
+                <li><a href="./help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Your Portfolio</h2>
+            <div class="portfolio-summary">
+                <div class="summary-card">
+                    <h3>Total Value</h3>
+                    <p>$124,567.89</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Today's Change</h3>
+                    <p class="positive">+$1,234.56 (+1.23%)</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Total Gain/Loss</h3>
+                    <p class="positive">+$12,345.67 (+11.23%)</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Cash Balance</h3>
+                    <p>$100875.65</p>
+                </div>
+            </div>
+            <div class="portfolio-chart">
+                <h3>Portfolio Performance</h3>
+                <br>
+                <br>
+                <img src="./images/portfolio_performance.png" alt="Portfolio Performance Chart">
+            </div>
+            <div class="portfolio-holdings">
+                <h3>Your Holdings</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Avg Price</th>
+                            <th>Current Price</th>
+                            <th>Market Value</th>
+                            <th>Gain/Loss</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AAPL</td>
+                            <td>Apple Inc.</td>
+                            <td>100</td>
+                            <td>$140.00</td>
+                            <td>$150.25</td>
+                            <td>$15,025.00</td>
+                            <td class="positive">+$1,025.00 (+7.32%)</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-button buy">Buy</button>
+                                    <button class="action-button sell">Sell</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MSFT</td>
+                            <td>Microsoft Corporation</td>
+                            <td>50</td>
+                            <td>$280.00</td>
+                            <td>$290.10</td>
+                            <td>$14,505.00</td>
+                            <td class="positive">+$505.00 (+3.61%)</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-button buy">Buy</button>
+                                    <button class="action-button sell">Sell</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GOOGL</td>
+                            <td>Alphabet Inc.</td>
+                            <td>20</td>
+                            <td>$2,200.00</td>
+                            <td>$2,150.75</td>
+                            <td>$43,015.00</td>
+                            <td class="negative">-$985.00 (-2.24%)</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-button buy">Buy</button>
+                                    <button class="action-button sell">Sell</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tradezella. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

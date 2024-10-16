@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="analysis.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Terminal - Analysis</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tradezella</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Dashboard</a></li>
+                <li><a href="./Market_overview.html">Market Overview</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li><a href="./watchlist.html">Watchlist</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./analysis.html">Analysis</a></li>
+                <li><a href="./settings.html">Settings</a></li>
+                <li><a href="./account.html">Account</a></li>
+                <li><a href="./help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Analysis Tools</h2>
+            <div class="analysis-container">
+                <div class="chart-container">
+                    <img src="./images/tradingview_volume_indicators.png" alt="Stock Chart">
+                </div>
+                <div class="analysis-sidebar">
+                    <div class="analysis-tools">
+                        <h3>Technical Analysis</h3>
+                        <select id="stock-selector">
+                            <option>Select a stock</option>
+                            <option>AAPL</option>
+                            <option>GOOGL</option>
+                            <option>MSFT</option>
+                            <option>AMZN</option>
+                        </select>
+                        <select id="timeframe">
+                            <option>1 Day</option>
+                            <option>1 Week</option>
+                            <option>1 Month</option>
+                            <option>3 Months</option>
+                            <option>1 Year</option>
+                        </select>
+                        <select id="indicator">
+                            <option>Moving Average</option>
+                            <option>RSI</option>
+                            <option>MACD</option>
+                            <option>Bollinger Bands</option>
+                        </select>
+                        <button id="apply-indicator">Apply Indicator</button>
+                    </div>
+                    <div class="fundamental-data">
+                        <h3>Fundamental Analysis</h3>
+                        <table>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr>
+                                <td>P/E Ratio</td>
+                                <td>25.6</td>
+                            </tr>
+                            <tr>
+                                <td>EPS</td>
+                                <td>$3.28</td>
+                            </tr>
+                            <tr>
+                                <td>Market Cap</td>
+                                <td>$2.1T</td>
+                            </tr>
+                            <tr>
+                                <td>Dividend Yield</td>
+                                <td>0.65%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tradezella. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

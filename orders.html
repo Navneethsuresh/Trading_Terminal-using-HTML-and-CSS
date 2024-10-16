@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="orders.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Terminal - Orders</title>
+  
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tradezella</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Dashboard</a></li>
+                <li><a href="./Market_overview.html">Market Overview</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li><a href="./watchlist.html">Watchlist</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./analysis.html">Analysis</a></li>
+                <li><a href="./settings.html">Settings</a></li>
+                <li><a href="./account.html">Account</a></li>
+                <li><a href="./help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Orders</h2>
+            <div class="tabs">
+                <button class="tab active">Active Orders</button>
+                <button class="tab">Order History</button>
+                <button class="tab">New Order</button>
+            </div>
+            <div class="order-section" id="active-orders">
+                <h3>Active Orders</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Symbol</th>
+                            <th>Type</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD001</td>
+                            <td>AAPL</td>
+                            <td>Buy</td>
+                            <td>50</td>
+                            <td>$150.00</td>
+                            <td><span class="status open">Open</span></td>
+                            <td>2024-09-23 10:30:15</td>
+                        </tr>
+                        <tr>
+                            <td>ORD002</td>
+                            <td>MSFT</td>
+                            <td>Sell</td>
+                            <td>25</td>
+                            <td>$300.00</td>
+                            <td><span class="status open">Open</span></td>
+                            <td>2024-09-23 11:15:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="order-section" id="order-history" style="display: none;">
+                <h3>Order History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Symbol</th>
+                            <th>Type</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD003</td>
+                            <td>GOOGL</td>
+                            <td>Buy</td>
+                            <td>10</td>
+                            <td>$2,200.00</td>
+                            <td><span class="status filled">Filled</span></td>
+                            <td>2024-09-22 14:45:00</td>
+                        </tr>
+                        <tr>
+                            <td>ORD004</td>
+                            <td>AMZN</td>
+                            <td>Sell</td>
+                            <td>5</td>
+                            <td>$3,300.00</td>
+                            <td><span class="status cancelled">Cancelled</span></td>
+                            <td>2024-09-21 09:30:45</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="order-section" id="new-order" style="display: none;">
+                <h3>Place New Order</h3>
+                <form class="new-order-form">
+                    <div class="form-group">
+                        <label for="symbol">Symbol</label>
+                        <input type="text" id="symbol" name="symbol" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-type">Order Type</label>
+                        <select id="order-type" name="order-type" required>
+                            <option value="market">Market</option>
+                            <option value="limit">Limit</option>
+                            <option value="stop">Stop</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="action">Action</label>
+                        <select id="action" name="action" required>
+                            <option value="buy">Buy</option>
+                            <option value="sell">Sell</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price (for Limit/Stop orders)</label>
+                        <input type="number" id="price" name="price" step="0.01">
+                    </div>
+                    <button type="submit" class="submit-button">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tradezella. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="Market_overview.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Terminal - Market Overview</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tradezella</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Dashboard</a></li>
+                <li><a href="./Market_overview.html">Market Overview</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li><a href="./watchlist.html">Watchlist</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./analysis.html">Analysis</a></li>
+                <li><a href="./settings.html">Settings</a></li>
+                <li><a href="./account.html">Account</a></li>
+                <li><a href="./help.html">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Market Overview</h2>
+            <input type="text" class="search-bar" placeholder="Search for stocks, indices, or assets...">
+            <div class="market-grid">
+                <div class="market-card">
+                    <h3>S&P 500</h3>
+                    <p>4,185.25 <span class="positive">+0.52%</span></p>
+                </div>
+                <div class="market-card">
+                    <h3>NASDAQ</h3>
+                    <p>13,150.78 <span class="negative">-0.18%</span></p>
+                </div>
+                <div class="market-card">
+                    <h3>Dow Jones</h3>
+                    <p>32,945.67 <span class="positive">+0.31%</span></p>
+                </div>
+                <div class="market-card">
+                    <h3>Russell 2000</h3>
+                    <p>1,984.20 <span class="positive">+0.75%</span></p>
+                </div>
+                <div class="market-card">
+                    <h3>FTSE 100</h3>
+                    <p>7,412.80 <span class="negative">-0.22%</span></p>
+                </div>
+                <div class="market-card">
+                    <h3>Nikkei 225</h3>
+                    <p>28,456.75 <span class="positive">+1.15%</span></p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Market Performance</h3>
+                <div class="tabs">
+                    <button class="tab active">1D</button>
+                    <button class="tab">1W</button>
+                    <button class="tab">1M</button>
+                    <button class="tab">3M</button>
+                    <button class="tab">1Y</button>
+                    <button class="tab">5Y</button>
+                </div>
+                <img src="./images/nifty_performance.jpg" alt="Market Performance Chart">
+            </div>
+            <div class="chart-container">
+                <h3>Top Gainers</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Change</th>
+                            <th>% Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AAPL</td>
+                            <td>Apple Inc.</td>
+                            <td>$150.25</td>
+                            <td class="positive">+3.75</td>
+                            <td class="positive">+2.56%</td>
+                        </tr>
+                        <tr>
+                            <td>MSFT</td>
+                            <td>Microsoft Corporation</td>
+                            <td>$290.10</td>
+                            <td class="positive">+5.20</td>
+                            <td class="positive">+1.82%</td>
+                        </tr>
+                        <tr>
+                            <td>AMZN</td>
+                            <td>Amazon.com Inc.</td>
+                            <td>$3,180.50</td>
+                            <td class="positive">+45.30</td>
+                            <td class="positive">+1.44%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tradezella. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
